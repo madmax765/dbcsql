@@ -1,0 +1,53 @@
+-- MySQL dump 10.13  Distrib 5.5.27, for Win32 (x86)
+--
+-- Host: localhost    Database: dbc
+-- ------------------------------------------------------
+-- Server version	5.5.27
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `spellradius`
+--
+
+DROP TABLE IF EXISTS `spellradius`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `spellradius` (
+  `Id` bigint(20) NOT NULL,
+  `min` float NOT NULL,
+  `perLevel` float NOT NULL,
+  `max` float NOT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `spellradius`
+--
+
+LOCK TABLES `spellradius` WRITE;
+/*!40000 ALTER TABLE `spellradius` DISABLE KEYS */;
+INSERT INTO `spellradius` VALUES (7,2,0,2),(8,5,0,5),(9,20,0,20),(10,30,0,30),(11,45,0,45),(12,100,0,100),(13,10,0,10),(14,8,0,8),(15,3,0,3),(16,1,0,1),(17,13,0,13),(18,15,0,15),(19,18,0,18),(20,25,0,25),(21,35,0,35),(22,200,0,200),(23,40,0,40),(24,65,0,65),(25,70,0,70),(26,4,0,4),(27,50,0,50),(28,50000,0,50000),(29,6,0,6),(30,500,0,500),(31,80,0,80),(32,12,0,12),(33,99,0,99),(35,55,0,55),(36,0,0,0),(37,7,0,7),(38,21,0,21),(39,34,0,34),(40,9,0,9),(41,150,0,150),(42,11,0,11),(43,16,0,16),(44,0.5,0,0.5),(45,10,0,10),(46,5,0,10),(47,15,0,15),(48,60,0,60),(49,90,0,90),(50,15,0,15),(51,60,0,60),(52,5,0,5),(53,60,0,60),(54,50000,0,50000),(55,130,0,130),(56,38,0,38),(57,45,0,45),(58,50000,0,50000),(59,32,0,32),(60,44,0,44),(61,14,0,14),(62,47,0,47),(63,23,0,23),(64,3.5,0,3.5),(65,80,0,80);
+/*!40000 ALTER TABLE `spellradius` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2012-12-21 20:35:11
